@@ -18,9 +18,11 @@ for i = 1:num_games
     % decide to replace your first choice
     second_choice = setdiff([1,2,3], [show_door, first_choice]);
 
-    if second_choice == car_location % switched to the winning door
+    % switched to the winning door
+    if second_choice == car_location 
         counts(2) = counts(2) + 1;
-    else % sticking with original door
+    % sticking with original door
+    else 
         counts(1) = counts(1) + 1;
     end
 
