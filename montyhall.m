@@ -33,11 +33,9 @@ for i = 1:num_games
         ylim([0,1])
         title('Monty Hall Probabilities')
         
-
         subplot(2,1,2)
         plot((1:i), record_probs(1:i,:), '-')
         ylim([0,1])
-
         drawnow
     end
 
